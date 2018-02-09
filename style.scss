@@ -1,0 +1,389 @@
+$gray: #565656;
+$yellow: #988b52;
+$blue: #102e56;
+$blue-2: #102e56;
+$breakpoint-sm: 768px;
+$breakpoint-xs: 480px;
+$breakpoint-xxs: 350px;
+
+.sub-menu {
+  font-weight: bold;
+}
+
+.infinite-main-menu a {
+  &:hover {
+    color: $blue-2 !important;
+  }
+}
+
+.sf-menu > .infinite-normal-menu li {
+  background-color: rgba(255, 255, 255, .9);
+}
+
+.sf-menu > li > .sub-menu .current-menu-ancestor > a,
+.sf-menu > li > .sub-menu .current-menu-item > a,
+.sf-menu > li > .sub-menu a:hover {
+  background-color: transparent;
+}
+// .gldr-flex-row-center .gdlr-core-container {
+//
+//   @media (min-width: $breakpoint-sm) {
+//     // display: flex;
+//     // flex-direction: row;
+//     // align-items: center;
+//   }
+// }
+
+.gdlr-core-title-item .gdlr-core-title-item-title-wrap {
+  top: -3px;
+}
+
+.line-height {
+  &--high p {
+    line-height: 45px !important;
+  }
+}
+
+.mobile__reduce * {
+  @media (max-width: $breakpoint-xs) {
+    font-size: 17px !important;
+  }
+}
+
+.gdlr-core-column-service-item .gdlr-core-column-service-title {
+  color: $gray;
+}
+
+.font {
+  &--volkhov,
+  &--volkhov * {
+    font-family: "Volkhov" !important;
+    font-weight: 100 !important;
+    color: $blue;
+  }
+}
+
+.gdlr-core-title-item-title,
+.infinite-page-title,
+.infinite-widget-head-text {
+  @extend .font--volkhov;
+}
+
+.service {
+  &__header {
+    text-transform: uppercase;
+    font-weight: 600;
+    margin: 15px 0 70px;
+  }
+
+  &__intro {
+    padding: 0 30px;
+  }
+}
+
+.gdlr-core-pbf-background-wrap {
+  margin: 10px 0 55px;
+}
+
+.home .gdlr-core-page-builder-body img,
+.image__grid img {
+  // max-height: 230px;
+  @media (max-width: $breakpoint-sm) {
+    // max-height: inherit;
+  }
+}
+
+.image__grid h4.gdlr-core-title-item-title {
+  padding-bottom: 5px !important;
+}
+
+.gdlr-core-title-item-title {}
+
+.js-service-card {
+  cursor: pointer;
+
+  a {
+    display: block;
+  }
+
+  p {
+    font-size: 24px;
+  }
+}
+
+.infinite-footer-column {
+  a,
+  p {
+    color: #bab9b9;
+  }
+
+  .infinite-widget-head-text {
+    color: $yellow;
+    text-transform: none;
+    font-weight: normal;
+    font-size: 29px;
+  }
+
+  li {
+    padding-left: 20px !important;
+    padding-bottom: 10px !important;
+    line-height: 19px !important;
+    margin-top: -3px !important;
+
+    &:before {
+      display: none !important;
+    }
+
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+}
+
+.infinite-top-bar-social-icon {
+  position: relative;
+  text-align: center;
+  padding: 0;
+  border-radius: 19px;
+  color: $blue !important;
+  background-color: $yellow;
+  min-width: 27px;
+  float: left;
+  font-size: 16px;
+  margin-left: 12px !important;
+}
+
+.social__clone {
+  display: block;
+  margin-top: 40px;
+
+  a:first-child {
+    margin-left: 0 !important;
+  }
+}
+
+.infinite-top-bar-left {
+  position: relative;
+  top: 3px;
+  margin-bottom: 6px;
+}
+
+.js-link {
+  cursor: pointer;
+  max-width: 250px;
+  margin: 0 auto;
+
+  img {
+    transition: all 200ms ease-in;
+  }
+}
+
+.tp-mask-wrap {
+  .tp-caption {
+    font-size: 3rem !important;
+    @media (max-width: $breakpoint-sm) {
+      bottom: -50px;
+      padding: 20px !important;
+      font-size: 1.3rem !important;
+    }
+    @media (max-width: $breakpoint-xxs) {
+      padding: 50px;
+      font-size: 1.1rem !important;
+    }
+  }
+}
+
+.sidebar .infinite-widget-title {
+  color: $gray;
+  font-weight: normal;
+
+  &:after {
+    content: "";
+    height: 1px;
+    width: 100px;
+    background-color: lighten($gray, 40);
+    display: block;
+    margin-top: 10px;
+  }
+}
+
+.wpcf7 {
+  label {
+    color: $gray;
+    line-height: 42px;
+    display: block;
+  }
+}
+
+.wpcf7-submit {
+  background-color: $yellow !important;
+}
+
+.infinite-not-found-wrap {
+  .infinite-not-found-back-to-home,
+  form {
+    display: none;
+  }
+
+  .infinite-not-found-background {
+    background-image: url("/wp-content/uploads/2018/01/slider-donovan-plumbing-bathroom.jpg");
+  }
+}
+
+.gdlr-core-testimonial-item .gdlr-core-testimonial-content {
+  font-style: normal;
+  padding: 0 150px;
+  @media (max-width: $breakpoint-sm) {
+    padding: 0;
+  }
+}
+
+.infinite-animate-fixed-navigation.infinite-header-style-plain .infinite-navigation {
+  padding-top: 50px;
+}
+
+.accordion {
+  &-title {
+    font-size: 17px !important;
+    cursor: pointer;
+    margin-bottom: 0 !important;
+
+    &:after {
+      content: "\f078";
+      font-family: "FontAwesome";
+      font-size: 9px;
+      position: relative;
+      top: -2px;
+      margin-left: 5px;
+      color: #999;
+    }
+  }
+
+  &-content {
+    margin-top: 14px;
+  }
+}
+
+.sf-menu > .infinite-normal-menu ul ul.sub-menu-right {
+  @media (min-width: 1700px) {
+    left: 100%;
+    right: auto;
+  }
+}
+
+.infinite-widget-title {
+  &--hide {
+    .infinite-widget-head-text,
+    .infinite-widget-title::after {
+      display: none !important;
+      content: "";
+    }
+  }
+}
+
+.wpcf7 input {
+  padding: 12px 14px;
+}
+
+.infinite-top-bar-right-social {
+  @media (max-width: 860px) {
+    display: none;
+  }
+}
+
+.social__clone div:first-child {
+  display: none;
+}
+@media (max-width: 400px) {
+  .infinite-top-bar-left {
+    font-size: 11px;
+
+    * {
+      width: 100%;
+      display: block;
+      // padding: 10px;
+    }
+
+    i {
+      font-size: 1px !important;
+      height: 0;
+      display: table-column;
+    }
+  }
+}
+
+.hide {
+  &--mobile {
+    @media (max-width: 860px) {
+      display: none;
+    }
+  }
+}
+
+.infinite-footer-wrapper a {
+  color: #969696;
+}
+@media (max-width: $breakpoint-sm) {
+  .gdlr-core-pbf-column-content-margin {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+  }
+
+  .gdlr-core-column-extend-left {
+    padding-bottom: 40px !important;
+  }
+
+  h3.gdlr-core-title-item-title {
+    font-size: 23px !important;
+    // margin-bottom: 40px !important;
+  }
+
+  .gdlr-core-title-item-divider {
+    display: none;
+  }
+
+  .gdlr-core-image-item-wrap,
+  .gdlr-core-image-item-wrap img {
+    width: 100%;
+  }
+}
+@media (max-width: 980px) {
+  .gdlr-core-title-item-title {
+    margin: 0 !important;
+  }
+}
+
+.gdlr-core-pbf-column-content-margin {
+  @media (max-width: $breakpoint-sm) {
+    border: none !important;
+
+    i {
+      display: none;
+    }
+  }
+}
+
+.infinite-page-title-wrap {
+  // sadly this causes the masthead to flash because of the js added stickiness to the header
+  // - tony
+  // min-height: 20rem;
+  // height: 20rem;
+  // display: flex;
+  // flex-direction: column;
+  // justify-content: center;
+}
+
+.gdlr-core-column-30 .gdlr-core-pbf-column-content-margin {
+  padding-top: 0 !important;
+}
+
+.infinite-page-title-wrap.infinite-style-custom .infinite-page-title-content {
+  padding: 0 !important;
+
+  .infinite-page-title {
+    padding: 10rem 0;
+    @media (max-width: $breakpoint-sm) {
+      padding: 5rem 0;
+    }
+  }
+}
