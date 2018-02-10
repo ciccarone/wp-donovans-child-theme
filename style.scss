@@ -182,7 +182,7 @@ $breakpoint-xxs: 350px;
   .tp-caption {
     font-size: 3rem !important;
     @media (max-width: $breakpoint-sm) {
-      bottom: -50px;
+      bottom: -40px;
       padding: 20px !important;
       font-size: 1.3rem !important;
     }
@@ -296,7 +296,7 @@ $breakpoint-xxs: 350px;
 }
 @media (max-width: 400px) {
   .infinite-top-bar-left {
-    font-size: 11px;
+    font-size: 14px;
 
     * {
       width: 100%;
@@ -384,6 +384,19 @@ $breakpoint-xxs: 350px;
     padding: 10rem 0;
     @media (max-width: $breakpoint-sm) {
       padding: 5rem 0;
+    }
+  }
+}
+
+.wrapper {
+
+  &--services {
+
+    @media (max-width: $breakpoint-sm) {
+      .gdlr-core-button {
+        position: relative;
+        top: -38px;
+      }
     }
   }
 }

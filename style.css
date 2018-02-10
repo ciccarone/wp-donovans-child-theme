@@ -106,7 +106,7 @@
   font-size: 3rem !important; }
   @media (max-width: 768px) {
     .tp-mask-wrap .tp-caption {
-      bottom: -50px;
+      bottom: -40px;
       padding: 20px !important;
       font-size: 1.3rem !important; } }
   @media (max-width: 350px) {
@@ -186,7 +186,7 @@
 
 @media (max-width: 400px) {
   .infinite-top-bar-left {
-    font-size: 11px; }
+    font-size: 14px; }
     .infinite-top-bar-left * {
       width: 100%;
       display: block; }
@@ -237,5 +237,10 @@
     @media (max-width: 768px) {
       .infinite-page-title-wrap.infinite-style-custom .infinite-page-title-content .infinite-page-title {
         padding: 5rem 0; } }
+
+@media (max-width: 768px) {
+  .wrapper--services .gdlr-core-button {
+    position: relative;
+    top: -38px; } }
 
 /*# sourceMappingURL=style.css.map */
